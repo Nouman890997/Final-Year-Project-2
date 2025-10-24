@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf2);
+}
+
+.pets-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  color: #2980b9;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: -8px;
+  width: 50%;
+  height: 2px;
+  background-color: #2980b9;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.filters input {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 180px;
+  background: #fdfdfd;
+  transition: 0.2s;
+}
+
+.filters input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.price-range {
+  display: flex;
+  gap: 10px;
+}
+
+.btn.reset-btn {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn.reset-btn:hover {
+  background-color: #e74c3c;
+}
+
+/* Pet Cards */
+.pet-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.pet-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pet-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #34495e;
+}
+
+.price-tag {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.pet-subtext {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn.view-details {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.view-details:hover {
+  background-color: #3498db;
+}
+
+.buyer-description h4 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.buyer-description p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}

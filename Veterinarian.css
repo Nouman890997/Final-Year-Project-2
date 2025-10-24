@@ -1,0 +1,187 @@
+/* General Page Styles */
+.veterinarian-container {
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf2);
+    padding: 40px;
+    min-height: 100vh;
+  }
+  
+  /* Title Styles */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Filter Section */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .filters input:focus,
+  .filters select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4e8cff55;
+  }
+  
+  .reset-btn {
+    background-color: #ff6b6b; /* Same as feed page reset button */
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 200px;
+  }
+  
+  .reset-btn:hover {
+    background-color: #e74c3c;
+  }
+  
+  /* Card Styles */
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    width: 350px;
+    min-height: 300px;
+    background-color: #272524;
+    border-radius: 20px;
+    padding: 40px 20px 20px 100px;
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-content {
+    margin-left: 40px;
+    text-align: left;
+  }
+  
+  .card h2,
+  .card h3,
+  .card p,
+  .card .location,
+  .card .availability,
+  .card .expertise {
+    margin-bottom: 15px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+  }
+  
+  .card h3 {
+    font-size: 14px;
+  }
+  
+  .card p {
+    font-size: 13px;
+  }
+  
+  .hire-button {
+    background-color: #ff7c7d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hire-button:hover {
+    background-color: #e65b5c;
+  }
+  
+  /* No Results */
+  .no-results {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .card img {
+      position: static;
+      transform: none;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  
+    .card-content {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .card h2,
+    .card h3,
+    .card p,
+    .hire-button,
+    .card .location,
+    .card .availability,
+    .card .expertise {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .card {
+      width: 90vw;
+      padding: 20px;
+    }
+  }
+  
